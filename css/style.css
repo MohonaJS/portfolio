@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+body {
+    margin: 0;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+a{
+    color: rgb(62, 59, 59);
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+
+.navbar{
+    background-color: lightgrey;
+    padding: 1% 7%;
+    text-align: center;
+    
+}
+.navbar h1 {
+    margin: 0;
+    padding-top: 10px;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navbar-menu a {
+    background-color: gray;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+    
+}
+.navbar-menu a:hover {
+    background-color: rgb(128, 119, 119);
+    color: aliceblue;
+}
+.navbar::after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
